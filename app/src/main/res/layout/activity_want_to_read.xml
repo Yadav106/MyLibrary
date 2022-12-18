@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WantToReadActivity"
+    android:background="@color/screen_bg">
+
+    <TextView
+        android:id="@+id/layoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/want_to_read"
+        android:textSize="25sp"
+        android:fontFamily="@font/lemon"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/booksRecView"
+        android:layout_below="@id/layoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+</RelativeLayout>
